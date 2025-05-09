@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS & JS Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Preferences</h1>
+    
+    <div class="preferences-form">
+      <label for="theme-selector">Theme:</label>
+      <select id="theme-selector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+      
+      <label for="font-size">Font Size:</label>
+      <input type="range" id="font-size" min="12" max="24" value="16">
+      
+      <button id="save-btn" class="animated-button">Save Preferences</button>
+      <button id="animate-btn">Trigger Special Animation</button>
+    </div>
+    
+    <div id="confirmation-message" style="display: none;">
+      Preferences saved successfully!
+    </div>
+    
+    <div id="animated-element" class="animation-target">
+      This element will animate!
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
